@@ -1,0 +1,409 @@
+/* General Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, hr, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: none;
+}
+
+:root {
+    --titleColor: #113e5d;
+    --titleColor:#333;
+  
+    --subtitleColor: #333;
+      
+    --textColor:#113e5d;
+    --textColor:#333;
+
+    --textBorderColor: rgb(255, 255, 255);
+    --textBackgroundColor: rgb(255, 255, 255);
+    --backgroundColor: white;
+  
+        
+    --navbarBackgroundColor: white;
+    --navbarBorderColor: white;
+    --navbarStripeColor: rgb(129, 129, 129);
+    
+    --titleBackgroundColor: white;
+    --titleStripeColor: rgb(129, 129, 129);
+  
+    --linkColor:rgb(0, 0, 0);
+    --linkColor: rgb(1, 0, 65);
+    
+    /* --linkColor:#113e5d;
+    --linkColor:black; */
+    --linkHoverColor: #7700b3;
+    /* --linkHoverColor: rgb(2, 0, 116); */
+  }
+
+ol, ul {
+	list-style-type:none;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+    line-height:100%;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+q:before, q:after {
+	content:"";
+}
+
+input, textarea, select {
+	vertical-align:middle;
+	padding:0;
+	margin:0;
+}
+
+textarea {
+	overflow:auto;
+	resize:none;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	font-size:18px; 
+	line-height:28px;
+	color:var(--textColor);
+	background-color:hsl(0, 0%, 100%);
+    font-family: "Baskerville", "Georgia", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+}
+
+h1 {
+	font-size:39px;
+	margin-bottom:10px;
+}
+
+h2 {
+    font-size:27px;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+h3 {
+	font-size:22px;
+    margin-bottom:10px;
+    /* text-align:center */
+}
+
+h4 {
+	font-size:16px;
+	margin-bottom:10px;
+}
+
+h5 {
+	font-size:14px;
+	margin-bottom:10px;
+}
+
+h6 {
+	font-size:12px;
+	margin-bottom:10px;
+}
+
+	/*  links
+	******************************/
+	a {color: var(--linkColor);text-decoration: none;}
+	a:hover {color: var(--linkHoverColor);text-decoration: underline;}
+
+	/*  superscript and subscript
+	******************************/
+	sup, sub {vertical-align: baseline;position: relative;top: -0.4em;}
+	sub { top: 0.4em; }
+	
+	/*  lists
+	******************************/
+	ul, ol {padding:0;margin:0;}
+	ul li {list-style-type:disc;}
+	ol li {list-style-type:decimal;}
+	ul li,
+	ol li {font-size: 19px; line-height: 20px;margin: 0 0 10px 15px;}
+
+	/*  horizontal lines
+	******************************/
+    hr {border-bottom: 1px solid #C1C1CB;margin:5px 0;padding:0;height:2px;width:100%; margin-bottom:15px;}
+
+
+.clear {
+	clear:both;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+#wrapper {
+	width:1000px;
+	margin:0 auto;
+	padding:0px 0 0px 0;
+}
+
+/*----start header----*/
+#header {
+	padding:30px 180px 30px;
+}
+
+#header .top_banner{
+		
+	height:50px;
+	padding: 10px 10px 5px;
+}
+
+
+#header h1 {
+    font-family: "Baskerville", serif; 
+    font-size: 45px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    color: var(--titleColor, black); /* Fallback to black if --titleColor is not defined */
+    background: white;
+}
+
+#header h1 a {
+	color:#000000;
+	text-decoration: none;
+}
+
+#header h1 a:hover {
+	text-decoration: none;
+}
+
+#header p{
+	font-size:16px;
+	margin-left:1px;
+	color:#000000;
+
+}
+
+.navigation{
+    margin:0px 100px 20px 100px;
+    border-top:#adb1b2 solid 1px;
+	border-bottom:#adb1b2 solid 1px;
+    padding:15px 5px;
+    text-align:center;
+	background: #ffffff;
+	--linkColor:#1a5f87;
+
+}
+
+.navigation ul{
+	margin:0px;
+	padding:0px;
+}
+
+.navigation ul li{
+	margin:0px;
+	padding:0px 32px;
+	display:inline;
+	font-size:26px;
+    list-style-type:none;
+    text-align:center;
+	border-right:#868B8F 2px;
+}
+
+.navigation ul li a{
+    color:#03314b;
+    color:#000000;
+    color:var(--linkColor);
+	text-decoration:none;
+}
+
+.navigation ul li a:hover{
+    text-decoration:underline;
+    color: var(--linkHoverColor);
+}
+
+.navigation ul li:last-child {
+	border-right:none;
+}
+/*----end header----*/
+
+
+/*----start page content----*/
+
+#page_content .center_section{
+    width: 900px;
+}
+
+#page_content .right_section{
+	width:650px;
+	float:right;
+}
+
+#page_content .right_section .top_content{
+	padding:15px 0 0px 0;
+}
+
+#page_content .right_section .top_content .column_one{
+	width:250px;
+	float:left;
+	margin-bottom:20px;
+}
+
+#page_content .right_section .top_content .column_two{
+	width:250px;
+	float:right;
+	margin-bottom:20px;
+}
+
+.intro{
+    padding:5px 20px;
+    margin:0px 60px;
+    font-size:21px;
+}
+
+.intro a{
+    color:#03314b;
+	text-decoration: underline;
+}
+
+.intro a:hover{
+	color:var(--linkHoverColor);
+	text-decoration:underline;
+}
+
+.intro ul li a{
+    color:#03314b;
+}
+
+.links{
+    padding:0px 20px;
+    margin:0px 90px;
+    font-size:21px;
+}
+
+.art_content{
+    padding: 0px 100px;
+    position:absolute;
+    left:0;
+    right:0;
+    font-size:21px;
+    text-align:center;
+}
+
+.border_left{
+	border-left:#6e7678 dotted 1px;
+	padding-left:20px;
+}
+
+.border_none{
+	border:none!important;
+	margin:0px!important;
+}
+
+.left_side_bar{
+    width:275px;
+    margin-top: 50px;
+	margin-bottom:10px;
+	float:left;
+}
+
+.left_side_bar h1{
+	font-size:30px;
+	padding:0 0 0 35px;
+	margin-bottom:15px;
+	color:#1b0400;
+}
+
+.left_side_bar .col_1{
+	padding:0px 0 20px 0;
+}
+
+.left_side_bar .col_1 .box{
+	padding:10px 15px 5px;
+    /* border:#A1A9AB solid 2px; */
+    background: repeating-linear-gradient(
+      135deg,
+      white,
+      white 4px,
+      var(--navbarStripeColor) 6px,
+      var(--navbarStripeColor)  6px
+    );
+}
+
+.left_side_bar .col_1 .box ul{
+	margin:0px;
+	padding:0px;
+}
+
+.left_side_bar .col_1 .box ul li{
+	margin:0px 0px 8px;
+    padding:0px 0px 0px 20px;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Latin Modern Roman', serif;
+    margin: 1em 0;
+    padding: .7em;
+	font-size:25px;
+	list-style-type:none;
+	background:rgb(255, 255, 255);
+}
+
+.left_side_bar .col_1 .box ul li a{
+	color:var(--linkColor);
+	text-decoration:none;
+}
+
+.left_side_bar .col_1 .box ul li a:hover{
+	color:var(--linkHoverColor);
+	text-decoration:none;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+/* settings for papers page */
+
+ .paper {
+    margin-bottom: 20px;
+  }
+  .paper h3 {
+	color: #1a5f87; 
+    font-weight: normal;
+  }
+  .paper a {
+    color: #03314b; 
+    text-decoration: none; 
+  }
+  .paper a:hover {
+    color: var(--linkHoverColor);
+    text-decoration: underline; 
+  }
+  .paper .authors {
+    display: block; 
+    font-style: normal; 
+	margin-bottom: 8px; 
+  }
+  .paper .journal {
+    display: block; 
+    font-style: normal;
+	margin-bottom: 16px; 
+  }
+  .paper .journal a {
+	font-weight: normal;
+	}	
+
+  .paper .arxiv {
+    display: block; 
+    font-style: normal; 
+	font-weight: normal;
+	margin-bottom: 25px; 
+  }
